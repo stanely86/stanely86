@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Add to Cart</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="./nav.css">
+        <script  type="module" src="index.js" ></script>
+        <script src="./nav.js"></script>
+    </head>
+    <body>
+
+    <div class="body">
+        <!--Import Nav Bar-->
+        <!--nav-->
+        <!--login-->
+        <nav class="nav">
+            <a href="https://ver1-to-do-list.netlify.app/"><img class="logo"  src="./assets/cat_.png"></a>      
+                
+            <a href="#" class="toogle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            
+            <!--link-->
+            <div class="nav-selection">
+                <ul class="nav-selection">
+                    <li><a href="all.html">CSS Practice</a></li>
+                    <li><a  href="javaScript.html">JavaScript Practice</a></li>
+                    <li><a  href="React.html">React Practice</a></li>
+                    <li><a id="switchMode">Switch Mode</a></li>
+                </ul>
+             </div>
+            
+        </nav>
+        <!--Mode-->
+
+        <!--page-->          
+        <div class="container">
+            
+            
+            <iframe src="https://giphy.com/embed/AmQ3y8XsZq9Q4"  height="400"  class="giphy-embed" allowFullScreen></iframe>
+
+            <label id="tasks" for="input-field">Task Name:</label>
+            <input type="text" id="input-field">
+
+            <label id="tasks" for="input-decription">Decription:</label>
+            <input type="text" id="input-decription">
+
+            <label id="tasks" for="input-dataTime">Time:</label>
+            <input type="datetime-local" id="input-dataTime" >
+
+            <label id="tasks" for="taskSelection">Choose a task type:</label>
+            <select id="taskSelection" name="cars">
+            <option value="🚴Sport">🚴Sport</option>
+            <option value="🛫Travel">🛫Travel</option>
+            <option value="🥪Food">🥪Food</option>
+            <option value="🧑‍💼work">🧑‍💼work</option>
+            <option value="🎬Entertainment">🎬Entertainment</option>
+            </select>
+
+            <button id="add-button">Add to list</button>
+            <p>Double Click to delete tasks</p>
+            
+            <div class="cat-img" data-tooltip="Ask question">
+                <img src="assets/cat.png">
+            </div>
+
+         <ul id="shopping-list">
+            </ul>
+        </div>
+
+        
+        
+    </div>
+    </body>
+</html>

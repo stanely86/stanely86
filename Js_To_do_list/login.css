@@ -1,0 +1,83 @@
+body{
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #432000;
+    user-select: none;
+    font-size: 20px;
+    color: #FDFDFD;
+    text-shadow: 2px 2px #ff0000;
+}
+
+input {
+    color: #432000;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 0;
+}
+
+input:focus {
+    border: 2px solid #ff7777;
+    outline: none;
+    background-color: white;
+}
+
+
+button {
+    color: #FDFDFD;
+    background-color: #a73146;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+button:hover {
+    background-color: #432000;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/* default */
+
+.login{
+    height: 100vh;
+    width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(293, 90%, 27%, 0.308);
+    padding: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px;
+    width: 60%;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+input:invalid{
+    border: 2px solid #972121;
+    position: relative;
+}
+
+label:has(+ input:invalid)::after{
+    content: '  *Fill up at least 5 charaters';
+    font-size: 12px;
+}

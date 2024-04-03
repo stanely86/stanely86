@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link href="tab.css" rel="stylesheet">
+    <title>Tabs</title>
+</head>
+<body>
+    <ul class="tabs">
+            <li data-tab-target="#home" class="active tab">Home</li>
+            <li data-tab-target="#pricing" class="tab">Pricing</li>
+            <li data-tab-target="#about" class="tab">About</li>
+    </ul>
+    <div class="tab-content">
+        <div id="home" data-tab-content class="active">
+            <h1>Home</h1>
+            <p>This is the home</p>
+        </div>
+        <div id="pricing" data-tab-content>
+            <h1>Home</h1>
+            <p>Prcing information in this site</p>
+        </div>
+        <div id="about" data-tab-content>
+            <h1>About</h1>
+            <p>Tell me about yourself</p>
+        </div>
+    </div>
+
+</body>
+</html>

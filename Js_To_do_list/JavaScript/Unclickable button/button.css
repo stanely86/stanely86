@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fc6843;
+    color: #432000;
+    font-size: 20px;
+    text-shadow: 2px 2px #ff0000;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;;
+    color: #FDFDFD;
+    background-color: #a73146;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    white-space: nowrap;
+}

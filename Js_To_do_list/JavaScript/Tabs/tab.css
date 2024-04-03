@@ -1,0 +1,31 @@
+[data-tab-content]{
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
+body{
+    background-color: yellowgreen;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 5px solid green;
+    list-style-type: none;
+    
+}
+
+.tab{
+    cursor: pointer;
+}
+
+.tab.active{
+background-color: rgb(215, 255, 196);
+}
+
+.tab:hover{
+    background-color: rgb(241, 255, 234);
+}
