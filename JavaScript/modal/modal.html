@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="modal.js" defer></script>
+    <link href="modal.css" rel="stylesheet">
+</head>
+<body>
+    
+    <button data-modal-target="#modal">Open Modal</button>
+    
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Example Modal</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Alias iste quo quos dolorum obcaecati? 
+            Fugiat ipsum fuga eaque nihil maiores repellat corporis dolorum magnam. 
+            Eligendi, architecto. Libero excepturi autem rem?
+        </div>
+    </div>
+    
+    <div id="modal-overlay"></div>
+</body>
+</html>

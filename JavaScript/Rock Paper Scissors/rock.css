@@ -1,0 +1,35 @@
+.selections{
+    text-align: center;
+}
+
+.selection{
+    font-size: 3rem;
+    transition: 0.2s ease-in-out;
+}
+
+.selection:hover{
+    transform: scale(1.1);
+}
+
+.result-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.result{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.result-selection{
+    font-size: 1.5rem;
+    opacity: .5;
+}
+
+
+.result-selection.winner{
+    opacity: 1;
+    font-size: 3rem;
+}

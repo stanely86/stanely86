@@ -1,0 +1,128 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+button{
+    margin: 1rem;
+}
+
+.btn{
+    background-color: var(--background-color);
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    padding: .5em 1em;
+
+    --background-color:#E3E3E3;
+    --border-size: 4px;
+}
+
+/* pop-up */
+.btn.btn-popup::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    border: var(--border-size) solid var(--background-color);
+    z-index: -1;
+    transition: 0.1s ease-in-out;
+}
+
+.btn.btn-popup:hover:before{
+    top: calc(var(--border-size)* -2);
+    bottom: calc(var(--border-size)* -2);
+    left: calc(var(--border-size)* -2);
+    right: calc(var(--border-size)* -2);
+}
+
+
+/* slide */
+.btn.btn-slide{   
+    transition: color 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.btn.btn-slide:hover,
+.btn.btn-slide:focus{
+    color: aliceblue;
+}
+
+.btn.btn-slide::before{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 153, 153);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s ease-in-out;
+}
+
+.btn.btn-slide:hover::before,
+.btn.btn-slide:focus::before{
+    transform: scaleX(1);
+}
+
+/* circle */
+.btn.btn-circle{
+    color: #E3E3E3;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn.btn-circle:hover{
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+.btn.btn-circle::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 153, 153);
+    z-index: -1;
+    border-radius: 50%;
+    transform: scale(1.5);
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn.btn-circle:hover::before,
+.btn.btn-circle:hover::before{
+    transform: scale(0);
+}
+
+/* underline */
+.btn.btn-underline::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--border-size);
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(0);
+}
+
+.btn.btn-underline:hover:before,
+.btn.btn-underline:focus:before{
+    background-color:rgb(0, 153, 153);
+    transform: scaleX(1);
+}

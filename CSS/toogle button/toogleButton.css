@@ -1,0 +1,60 @@
+body{
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #432000;
+    user-select: none;
+    font-size: 20px;
+    color: #FDFDFD;
+    text-shadow: 2px 2px #ff0000;
+}
+
+/* Set up a clickable label */
+
+input[type="checkbox"].toggle{
+    position: relative;
+    opacity: 0;
+    left: -9000px;
+    top:-9000px;
+}
+
+/* Set up a buton background */
+
+input[type="checkbox"].toggle + label::before{
+    content:'';
+    background-color: #ffdcdc;
+    width: 2em;
+    height: 1em;
+    border-radius: 1em;
+    transition: 0.3s;
+}
+
+input[type="checkbox"].toggle + label{
+    display: flex;
+}
+
+input[type="checkbox"].toggle:checked + label::before{
+    background-color: #feffdc;
+}
+
+/* Set up a buton */
+
+input[type="checkbox"].toggle + label::after{
+    content: '';
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background-color: #c74949;
+    border-radius: 100em;
+    transform: translateX(0);
+    transition: 500ms ease-in-out;
+}
+
+input[type="checkbox"].toggle:checked + label::after{
+    background-color: #d7da32;
+    transform: translateX(1em);
+}
+
+/* Set up a focus border */
+input[type="checkbox"].toggle:focus + label::before{
+    border: 1px solid #8f1111;
+}
